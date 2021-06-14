@@ -1,0 +1,37 @@
+.number {
+    padding: 5rem 20rem;
+    text-align: center;
+    &_main {
+        &-speak {
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 1.5rem;
+                padding: 0rem 30rem;
+            }
+        }
+        &-number {
+            width: 100%;
+            margin: 0rem auto;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+            & .number-1,
+            & .number-2,
+            & .number-3 {
+                flex: 0 0 33.33%;
+                & h2 {
+                    font-size: 5rem;
+                }
+                & p {
+                    font-size: 1.5rem;
+                }
+                & img {
+                    width: 5rem;
+                }
+            }
+        }
+    }
+}

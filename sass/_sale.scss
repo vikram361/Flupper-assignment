@@ -1,0 +1,55 @@
+.sale {
+    width: 100%;
+    &_main {
+        width: 100%;
+        display: flex;
+        &-1,
+        &-2,
+        &-3,
+        &-4 {
+            flex: 0 0 25%;
+            padding: 20rem 0rem;
+        }
+        &-1,
+        &-3 {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-1 {
+            background-image: url(../img/1.jpg);
+        }
+        &-3 {
+            background-image: url(../img/2.jpg);
+        }
+        &-2,
+        &-4 {
+            background-color: var(--color-gray);
+            padding: 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            & h2 {
+                font-size: 2.5rem;
+            }
+            & .cta {
+                width: 13rem;
+                height: 3rem;
+                font-size: 1.3rem;
+                color: #fff;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                cursor: pointer;
+            }
+        }
+        &-2 .cta {
+            background-color: var(--color-red);
+        }
+        &-4 .cta {
+            background-color: #c9bfb3;
+        }
+    }
+}

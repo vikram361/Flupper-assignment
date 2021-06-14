@@ -1,0 +1,71 @@
+.challenge {
+    width: 100%;
+    padding: 5rem 10rem;
+    padding-left: 30rem !important;
+    &_main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_first-div {
+        flex: 0 0 25%;
+        & h2 {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+            & span {
+                color: var(--color-purple);
+            }
+        }
+        &-cta {
+            background-color: var(--color-red);
+            width: 15rem;
+            height: 4rem;
+            font-size: 1.5rem;
+            color: #fff;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4rem;
+            cursor: pointer;
+        }
+    }
+    &_second-div {
+        padding: 0rem 10rem;
+        flex: 0 0 75%;
+        & .second-div-para {
+            color: var(--color-red);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        & .second-div-heading {
+            font-size: 3rem;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        &-child-div {
+            display: flex;
+            justify-content: space-between;
+            & .child-div-1,
+            & .child-div-2 {
+                flex: 0 0 45%;
+                margin-right: 2rem;
+                padding: 1rem 0rem;
+                & h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                & p {
+                    font-size: 1.2rem;
+                }
+                & img {
+                    width: 5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

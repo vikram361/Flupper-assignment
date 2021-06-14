@@ -1,0 +1,42 @@
+.products {
+    width: 100%;
+    padding: 0;
+    background-color: var(--color-gray);
+    &_main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-first,
+        &-second {
+            flex: 0 0 50%;
+        }
+    }
+}
+
+.product_main-second {
+    padding-left: 5rem;
+    & h2 {
+        font-size: 3rem;
+        padding-right: 15rem;
+        line-height: 4.5rem;
+    }
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    &-1,
+    &-2,
+    &-3,
+    &-4 {
+        flex: 0 0 45%;
+        margin: 1rem 2rem 1rem 0rem;
+        & h3 {
+            font-size: 1.5rem;
+        }
+        & p {
+            font-size: 1.2rem;
+        }
+    }
+}
