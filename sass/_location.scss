@@ -1,5 +1,8 @@
 .location {
     padding: 5rem 10rem;
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem;
+    }
     &_main {
         & .para {
             color: #47b9f3;
@@ -23,15 +26,26 @@
         &-locations {
             display: flex;
             justify-content: space-between;
+            @media only screen and (max-width: $bp-small) {
+                flex-direction: column;
+            }
             & .locations-1,
             & .locations-2,
             & .locations-3 {
                 flex: 0 0 30%;
                 margin: 1rem;
+                @media only screen and (max-width: $bp-small) {
+                    flex: 0 0 100%;
+                    margin: 0 auto;
+                    margin-bottom: 2rem;
+                }
                 & .building-img {
                     border-radius: 10px 40px 10px 10px;
                     overflow: hidden;
                     margin-bottom: 1rem;
+                    @media only screen and (max-width: $bp-small) {
+                        width: 30rem;
+                    }
                     & img {
                         width: 100%;
                     }

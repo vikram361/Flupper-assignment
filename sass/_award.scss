@@ -1,9 +1,12 @@
 .award {
     text-align: center;
     padding: 5rem 10rem;
+    @media only screen and (max-width: 600px) {
+        padding: 5rem;
+    }
     &_main {
         & .para {
-            color: #11ACEE;
+            color: #11acee;
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
@@ -12,9 +15,18 @@
             font-size: 4rem;
             padding: 0 30rem;
             line-height: 5rem;
+            @media only screen and (max-width: 1200px) {
+                padding: 0 10rem;
+            }
+            @media only screen and (max-width: 600px) {
+                padding: 0rem;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
         }
         &-icon {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin: 5rem 0;
             & .icon-1,
@@ -22,8 +34,14 @@
             & .icon-3,
             & .icon-4 {
                 flex: 0 0 25%;
+                @media only screen and (max-width: 600px) {
+                    flex: 0 0 40%;
+                }
                 & img {
                     width: 20rem;
+                    @media only screen and (max-width: 600px) {
+                        width: 15rem;
+                    }
                 }
                 & P {
                     font-size: 1.2rem;
@@ -37,6 +55,10 @@
             justify-content: space-around;
             width: 70%;
             margin: 0 auto;
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+                width: 100%;
+            }
             & .cta-text {
                 font-size: 2rem;
                 color: #000;
@@ -46,11 +68,15 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #11ACEE;
+                background-color: #11acee;
                 color: #fff;
                 font-size: 1.5rem;
                 border-radius: 100px;
                 cursor: pointer;
+                @media only screen and (max-width: 600px) {
+                    margin: 0 auto;
+                    height: 5rem;
+                }
             }
         }
     }

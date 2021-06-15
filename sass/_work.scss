@@ -1,5 +1,8 @@
 .work {
     padding: 10rem 20rem;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 2rem;
+    }
     &_main {
         background-color: #11ACEE;
         padding: 3rem;
@@ -7,6 +10,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
         &-first {
             flex: 0 0 70%;
             & p {
@@ -19,15 +26,26 @@
                 font-size: 4rem;
                 margin-bottom: 2rem;
                 line-height: 5rem;
+                @media only screen and (max-width: $bp-small) {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
                 & span {
                     font-weight: 500;
                     font-size: 4rem;
                     color: #fff;
+                    @media only screen and (max-width: $bp-small) {
+                        font-size: 2rem;
+                    }
                 }
             }
             & h3 {
                 font-size: 4rem;
                 color: #fff;
+                @media only screen and (max-width: $bp-small) {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
                 & span {
                     font-size: 2rem;
                     font-weight: 400;
@@ -47,6 +65,12 @@
             align-items: center;
             margin-right: 10rem;
             cursor: pointer;
+            @media only screen and (max-width: $bp-largest) {
+                margin-right: 2rem;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                margin-top: 2rem;
+            }
         }
     }
 }

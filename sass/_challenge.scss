@@ -2,11 +2,17 @@
     width: 100%;
     padding: 5rem 10rem;
     padding-left: 30rem !important;
+    @media only screen and (max-width: $bp-largest) {
+        padding: 5rem !important;
+    }
     &_main {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
     }
     &_first-div {
         flex: 0 0 25%;
@@ -33,6 +39,9 @@
     }
     &_second-div {
         padding: 0rem 10rem;
+        @media only screen and (max-width: $bp-medium) {
+            padding: 2rem 0;
+        }
         flex: 0 0 75%;
         & .second-div-para {
             color: var(--color-red);
@@ -49,6 +58,9 @@
         &-child-div {
             display: flex;
             justify-content: space-between;
+            @media only screen and (max-width: $bp-small) {
+                flex-direction: column;
+            }
             & .child-div-1,
             & .child-div-2 {
                 flex: 0 0 45%;

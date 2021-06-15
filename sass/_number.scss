@@ -1,6 +1,9 @@
 .number {
     padding: 5rem 20rem;
     text-align: center;
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem;
+    }
     &_main {
         &-speak {
             h2 {
@@ -10,6 +13,12 @@
             p {
                 font-size: 1.5rem;
                 padding: 0rem 30rem;
+                @media only screen and (max-width: $bp-largest) {
+                    padding: 0 10rem;
+                }
+                @media only screen and (max-width: $bp-smallest) {
+                    padding: 0;
+                }
             }
         }
         &-number {
@@ -24,6 +33,9 @@
                 flex: 0 0 33.33%;
                 & h2 {
                     font-size: 5rem;
+                    @media only screen and (max-width: $bp-smallest) {
+                        font-size: 3rem;
+                    }
                 }
                 & p {
                     font-size: 1.5rem;

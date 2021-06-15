@@ -6,6 +6,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+        }
         &-first,
         &-second {
             flex: 0 0 50%;
@@ -15,10 +18,16 @@
 
 .product_main-second {
     padding-left: 5rem;
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem !important;
+    }
     & h2 {
         font-size: 3rem;
         padding-right: 15rem;
         line-height: 4.5rem;
+        @media only screen and (max-width: $bp-smallest) {
+            padding-right: 0;
+        }
     }
 }
 
@@ -26,17 +35,26 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;
+    @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+    }
     &-1,
     &-2,
     &-3,
     &-4 {
         flex: 0 0 45%;
         margin: 1rem 2rem 1rem 0rem;
+        @media only screen and (max-width: $bp-smallest) {
+            flex: 0 0 100%;
+        }
         & h3 {
             font-size: 1.5rem;
         }
         & p {
             font-size: 1.2rem;
+        }
+        & img {
+            width: 3rem;
         }
     }
 }

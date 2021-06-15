@@ -2,6 +2,9 @@
     padding: 5rem 10rem;
     background-color: #000;
     text-align: center;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 5rem;
+    }
     & p {
         color: #0F97D2;
         font-size: 2rem;
@@ -32,6 +35,15 @@
             margin: 1rem;
             padding: 2rem;
             border-radius: 5px;
+            @media only screen and (max-width: $bp-largest) {
+                flex: 0 0 20%;
+            }
+            @media only screen and (max-width: $bp-medium) {
+                flex: 0 0 30%;
+            }
+            @media only screen and (max-width: $bp-small) {
+                flex: 0 0 45%;
+            }
             & img {
                 width: 15rem;
             }
