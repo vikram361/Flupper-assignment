@@ -1,0 +1,57 @@
+.award {
+    text-align: center;
+    padding: 5rem 10rem;
+    &_main {
+        & .para {
+            color: #11ACEE;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        & .heading {
+            color: #000;
+            font-size: 4rem;
+            padding: 0 30rem;
+            line-height: 5rem;
+        }
+        &-icon {
+            display: flex;
+            justify-content: space-between;
+            margin: 5rem 0;
+            & .icon-1,
+            & .icon-2,
+            & .icon-3,
+            & .icon-4 {
+                flex: 0 0 25%;
+                & img {
+                    width: 20rem;
+                }
+                & P {
+                    font-size: 1.2rem;
+                    padding: 0 8rem;
+                    font-weight: 600;
+                }
+            }
+        }
+        &-cta {
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+            margin: 0 auto;
+            & .cta-text {
+                font-size: 2rem;
+                color: #000;
+            }
+            & .cta-button {
+                width: 18rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #11ACEE;
+                color: #fff;
+                font-size: 1.5rem;
+                border-radius: 100px;
+                cursor: pointer;
+            }
+        }
+    }
+}
